@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Trip Planner</title>
+    <link href="http://netdna.bootstrapcdn.com/bootstrap/3.0.3/css/bootstrap.min.css" rel="stylesheet">
+    <link href="/stylesheets/style.css" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-1.10.2.min.js"></script>
+    <script src="http://netdna.bootstrapcdn.com/bootstrap/3.0.3/js/bootstrap.min.js"></script>
+  </head>
+  <body>
+    <a> Hotels: </a>
+    <select name="select-hotel">
+      {% for hotel in hotels %}
+         <option value="{{hotel.name}}">{{hotel.name}}</option> 
+      {% endfor %}
+    </select>
+    <a> Restaurants: </a>
+    <select name="select-restaurant">
+      {% for restaurant in restaurants %}
+         <option value="{{restaurant.name}}">{{restaurant.name}}</option> 
+      {% endfor %}
+    </select>
+    <a> Activities: </a>
+    <select name="select-activity">
+      {% for activity in activities %}
+         <option value="{{activity.name}}">{{activity.name}}</option> 
+      {% endfor %}
+    </select>
+  </body>
+</html>
